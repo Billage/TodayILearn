@@ -1,0 +1,22 @@
+2017.04.10
+
+Today I Learn
+
+1. 3depth 이상 메뉴 구축시 자손 선택자 사용
+$(function(){
+$(".gnb li ul").hide();
+$("gnb>li").hover(function(){;
+$('ul',this).slideToggle();
+});
+})
+
+이렇게 되면 모든 3depth가 포함된 li가 자손 ul을 인지하지 못한다.
+따라서 자식선택자를 통해 인지시킬 수 있음.
+
+2. input CrossBrowsing
+
+input 속성들은 자체적으로 padding 값을 가지고 있다.
+브라우저별로 인지할 수도 못할 수도 있다.
+기본적으로 쓸 수 있는 자간/높이를 통일 하는
+
+input / label 의 height/line-height 값을 통일한다면 높이를 맞출 수 있다.
