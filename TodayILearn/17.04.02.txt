@@ -1,0 +1,6 @@
+17.04.02
+
+1. 서버 계정 IP탐색
+  - cmd -> nslookup 도메인 (ex: nslookup dev278.dwebs.co.kr)
+  - ip노출
+2. 해당ip/_phpMyadmin -> 계정 id,비밀번호 입력하면 db 접속해서 백업 등 할 수 있다.
