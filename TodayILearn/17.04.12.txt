@@ -1,0 +1,23 @@
+2017.04.12
+
+Today I Learn
+
+1. 탭메뉴 구현하기.
+
+$(function() {
+  $("article").hide();
+  $("article:first").show();
+
+  $(".kor_map span").click(function() {
+      $("article").hide()
+      var activeTab = $(this).attr("rel");
+      $("#" + activeTab).fadeIn()
+  });
+});
+
+gnb 드롭다운 메뉴 구성할 때와 비슷하다.
+gnb li ul을 숨기는 것과 같이 콘텐트가 담겨있는 요소(예제에서는 article)를 숨기고
+가장 상위에 있는 요소를 노출시킨다.
+탭메뉴는 항상 첫 번째 항목이 노출되야하기 때문이다.
+
+그리고 변수 activeTab은 클릭한 요소의 rel값을 호출하고 같은 값을 ID를 가진 요소를 FadeIn시킨다.

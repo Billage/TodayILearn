@@ -1,0 +1,18 @@
+2017.04.17
+
+Today I Learn
+
+1. 제이쿼리 무조건 가운데 정렬하기
+
+$( document ).ready(function() {
+  $(window).resize();
+});
+$(window).resize(function(){
+   $('.className').css({position:'absolute'}).css({
+       left: ($(window).width() - $('.className').outerWidth())/2,
+       top: ($(window).height() - $('.className').outerHeight())/2
+   });
+});
+
+문서가 열릴 때 콘텐츠 너비를 파악한 후
+가운데 정렬하고자 하는 요소를 jQuery로 조정한다.
